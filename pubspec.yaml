@@ -1,7 +1,10 @@
 name: reusable_speed_dial
-description: "A new Flutter package project."
+description: "A Flutter package providing a customizable, animated speed dial button for quick access to multiple actions, with support for child buttons, labels, and icons."
 version: 0.0.1
-homepage:
+homepage: https://github.com/GenieCoderSrc/reusable_speed_dial
+repository: https://github.com/GenieCoderSrc/reusable_speed_dial
+issue_tracker: https://github.com/GenieCoderSrc/reusable_speed_dial/issues
+
 
 environment:
   sdk: ^3.7.2
@@ -10,6 +13,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  reusable_icon:
+    path: ../reusable_icon
 
 dev_dependencies:
   flutter_test:
@@ -22,6 +27,8 @@ dev_dependencies:
 # The following section is specific to Flutter packages.
 flutter:
 
+example:
+  path: example
   # To add assets to your package, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
