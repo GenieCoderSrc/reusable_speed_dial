@@ -182,11 +182,9 @@ class _SpeedDialState extends State<SpeedDial>
                   : widget.onCloseIcon ?? Icons.cancel,
             ),
             color: Colors.white,
-            onPressed:
-                () =>
-                    _animationController.isDismissed
-                        ? _animationController.forward()
-                        : _animationController.reverse(),
+            onPressed: () => _animationController.isDismissed
+                ? _animationController.forward()
+                : _animationController.reverse(),
           ),
         ),
       ],
