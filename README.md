@@ -16,7 +16,7 @@ Add this package to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  reusable_speed_dial: ^0.0.1
+  reusable_speed_dial: latest_version
 ```
 
 Import it in your Dart file:
