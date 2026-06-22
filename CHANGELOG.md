@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.3
+
+### Jun 22, 2026
+
+### ✨ Fix
+
+- Fixed the unwanted `@override` issue.
+
 ## 0.0.2
 
 ### Aug 22, 2025
@@ -17,4 +25,5 @@ All notable changes to this project will be documented in this file.
 
 - Initial release of `reusable_speed_dial` package.
 - `SpeedDial`: A customizable and animated speed dial button for quick access to multiple actions.
-- `SpeedDialChild`: Configurable child buttons in the speed dial with support for custom icons, labels, and actions.
+- `SpeedDialChild`: Configurable child buttons in the speed dial with support for custom icons,
+  labels, and actions.
