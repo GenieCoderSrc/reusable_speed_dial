@@ -43,7 +43,6 @@ class SpeedDial extends StatefulWidget {
   }
 }
 
-@override
 class _SpeedDialState extends State<SpeedDial>
     with SingleTickerProviderStateMixin {
   late AnimationController _animationController;
