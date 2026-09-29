@@ -15,6 +15,8 @@ A Flutter package that provides a customizable and animated Speed Dial button, a
 Add this package to your `pubspec.yaml`:
 
 ```yaml
+resolution: workspace
+
 dependencies:
   reusable_speed_dial: latest_version
 ```

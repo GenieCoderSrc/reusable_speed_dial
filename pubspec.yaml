@@ -8,7 +8,9 @@ issue_tracker: https://github.com/GenieCoderSrc/reusable_speed_dial/issues
 
 environment:
   sdk: '>=3.6.0 <4.0.0'
-resolution: workspace # <-- Required for Melos 8 & Pub Workspaces
+
+
+resolution: workspace
 
 dependencies:
   flutter:
