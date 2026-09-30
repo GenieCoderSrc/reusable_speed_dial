@@ -57,8 +57,7 @@ class _SpeedDialState extends State<SpeedDial>
 
   @override
   void initState() {
-    _animationController =
-        widget.controller ??
+    _animationController = widget.controller ??
         AnimationController(
           vsync: this,
           duration: const Duration(milliseconds: 250),
@@ -77,11 +76,9 @@ class _SpeedDialState extends State<SpeedDial>
   void _setupAnimations() {
     final double fractionOfOneSpeedDialChild =
         1.0 / widget.speedDialChildren!.length;
-    for (
-      int speedDialChildIndex = 0;
-      speedDialChildIndex < widget.speedDialChildren!.length;
-      ++speedDialChildIndex
-    ) {
+    for (int speedDialChildIndex = 0;
+        speedDialChildIndex < widget.speedDialChildren!.length;
+        ++speedDialChildIndex) {
       final List<TweenSequenceItem<double>> tweenSequenceItems =
           <TweenSequenceItem<double>>[];
 
@@ -103,8 +100,7 @@ class _SpeedDialState extends State<SpeedDial>
         ),
       );
 
-      final double lastWeight =
-          fractionOfOneSpeedDialChild *
+      final double lastWeight = fractionOfOneSpeedDialChild *
           (widget.speedDialChildren!.length - 1 - speedDialChildIndex);
       if (lastWeight > 0.0) {
         tweenSequenceItems.add(
@@ -137,17 +133,16 @@ class _SpeedDialState extends State<SpeedDial>
             padding: const EdgeInsets.only(right: 4),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.end,
-              children:
-                  widget.speedDialChildren?.map<Widget>((
+              children: widget.speedDialChildren?.map<Widget>((
                     SpeedDialChild speedDialChild,
                   ) {
                     final Widget speedDialChildWidget = Opacity(
-                      opacity:
-                          _speedDialChildAnimations[speedDialChildAnimationIndex]
-                              .value,
+                      opacity: _speedDialChildAnimations[
+                              speedDialChildAnimationIndex]
+                          .value,
                       child: ScaleTransition(
-                        scale:
-                            _speedDialChildAnimations[speedDialChildAnimationIndex],
+                        scale: _speedDialChildAnimations[
+                            speedDialChildAnimationIndex],
                         child: Padding(
                           padding: const EdgeInsets.symmetric(vertical: 4.0),
                           child: FloatingActionButton(
